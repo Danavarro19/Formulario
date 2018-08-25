@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+  </head>
+  <body>
+
+    <form  action="" method="GET">
+
+      <fieldset id="personalInfo">
+        <legend>Personal</legend>
+        <label for="nombre">Nombre completo</label>
+        <input type="text" name="nombre" title="Nombre" required>
+
+        <label for="fechaNacimiento">Fecha de nacimiento</label>
+        <input type="date" name="fechaNacimiento" title="Fecha de nacimiento" min="01-01-2000" required>
+
+        <label for="animal">Animal Favorito</label>
+        <input type="text" name="animal" title="Animal favorito">
+
+      </fieldset>
+
+      <br><br>
+
+      <fieldset id="accountInfo">
+        <legend>Account</legend>
+        <label for="emailAd">Email</label>
+        <input type="email" name="emailAd" title="email" placeholder="email123@example.com" required>
+
+        <label for="pass">Password</label>
+        <input type="password" name="pass" min="6">
+
+        <label for="pass">Verify password</label>
+        <input type="password" name="pass" min="6">
+
+      </fieldset>
+
+      <br><br>
+
+      <fieldset id="contactInfo">
+        <legend>Contact</legend>
+        <label for="direcc">Direccion</label>
+        <input type="text" name="direccion" title="Direccion" required>
+
+        <label for="ciudad">Ciudad</label>
+        <select  name="ciudad">
+          <option value="ciudad1">Ciudad 1</option>
+          <option value="ciudad2">Ciudad 2</option>
+          <option value="ciudad3">Ciudad 3</option>
+        </select>
+
+        <label for="pais">Ciudad</label>
+        <select  name="pais">
+          <option value="pais1">Pais 1</option>
+          <option value="pais2">Pais 2</option>
+          <option value="pais3">Pais 3</option>
+        </select>
+
+        <label for="numeroTel">Numero de telefono</label>
+        <input type="tel" name="numeroTel" placeholder="8888-8888" pattern="[0-9]{4}-[0-9]{4}">
+      </fieldset>
+
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Cancelar">
+    </form>
+
+  </body>
+</html>
